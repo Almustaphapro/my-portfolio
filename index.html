@@ -20,6 +20,8 @@
     <header class="header">
       <a class="logo" href="#">Almustapha.dev</a>
 
+      <i class="bx bx-menu" id="menu-icon"></i>
+
       <nav class="navbar">
         <a href="#home" class="active">Home</a>
         <a href="#about">About</a>
@@ -28,7 +30,6 @@
         <a href="#contact">Contact</a>
       </nav>
     </header>
-
     <!-- ===== HOME ===== -->
     <section class="home" id="home">
       <div class="home-content">
@@ -189,12 +190,86 @@
     <section class="contact" id="contact">
       <h2 class="heading">Contact <span>Me</span></h2>
 
-      <form
-        id="contact-form"
-        action="https://formspree.io/f/xaqnyyzo"
-        method="POST"
+      <div
+        class="contact-wrapper"
+        style="
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+          gap: 4rem;
+          margin-top: 3rem;
+        "
       >
-        <div class="input-box">
+        <div class="contact-details">
+          <div
+            class="detail-box"
+            style="
+              margin-bottom: 2rem;
+              display: flex;
+              align-items: center;
+              gap: 1.5rem;
+            "
+          >
+            <i
+              class="bx bxs-phone"
+              style="font-size: 3rem; color: var(--accent)"
+            ></i>
+            <div>
+              <h4 style="font-size: 1.8rem">Phone</h4>
+              <p style="font-size: 1.4rem; color: var(--subtext)">
+                +234 806 513 1185
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="detail-box"
+            style="
+              margin-bottom: 2rem;
+              display: flex;
+              align-items: center;
+              gap: 1.5rem;
+            "
+          >
+            <i
+              class="bx bxs-envelope"
+              style="font-size: 3rem; color: var(--accent)"
+            ></i>
+            <div>
+              <h4 style="font-size: 1.8rem">Email</h4>
+              <p style="font-size: 1.4rem; color: var(--subtext)">
+                <a
+                  target="_blank"
+                  href="https://lawalm14@gmail.com/"
+                  style="color: white"
+                  >lawalm14@gmail.com</a
+                >
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="detail-box"
+            style="
+              margin-bottom: 2rem;
+              display: flex;
+              align-items: center;
+              gap: 1.5rem;
+            "
+          >
+            <i
+              class="bx bxs-map"
+              style="font-size: 3rem; color: var(--accent)"
+            ></i>
+            <div>
+              <h4 style="font-size: 1.8rem">Location</h4>
+              <p style="font-size: 1.4rem; color: var(--subtext)">
+                Kaduna, Nigeria
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <form action="https://formspree.io/f/xaqnyyzo" method="POST">
           <input type="text" name="name" placeholder="Full Name" required />
           <input
             type="email"
@@ -202,22 +277,15 @@
             placeholder="Email Address"
             required
           />
-        </div>
-
-        <div class="input-box">
-          <input type="number" name="phone" placeholder="Mobile Number" />
-          <input type="text" name="subject" placeholder="Subject" required />
-        </div>
-
-        <textarea
-          name="message"
-          placeholder="Your Message"
-          rows="8"
-          required
-        ></textarea>
-
-        <input type="submit" value="Send Message" class="btn" />
-      </form>
+          <textarea
+            name="message"
+            placeholder="Your Message"
+            rows="5"
+            required
+          ></textarea>
+          <input type="submit" value="Send Message" class="btn" />
+        </form>
+      </div>
     </section>
 
     <!-- FOOTER -->

@@ -3,7 +3,6 @@
 A modern, responsive personal portfolio website built with HTML, CSS, and JavaScript to showcase my skills, projects, and contact information.
 This portfolio is designed to attract recruiters and clients by highlighting real projects, smooth animations, and clean UI/UX.
 
-
 Live Preview
 https://almustphapro.netlify.app/
 
@@ -52,14 +51,14 @@ portfolio/
 ├── script.js
 │
 ├── projects/
-│   ├── portfolio.html
-│   ├── landing-page.html
-│   └── app-ui.html
+│ ├── portfolio.html
+│ ├── landing-page.html
+│ └── app-ui.html
 │
 ├── images/
-│   ├── portfolio-screenshot.png
-│   ├── landing-screenshot.png
-│   └── app-ui-screenshot.png
+│ ├── portfolio-screenshot.png
+│ ├── landing-screenshot.png
+│ └── app-ui-screenshot.png
 │
 └── README.md
 

@@ -396,3 +396,42 @@ textarea:focus {
   font-size: 1.4rem;
   opacity: .7;
 }
+
+/* RESPONSIVE DESIGN & MOBILE MENU */
+#menu-icon {
+  font-size: 3.6rem;
+  color: var(--accent); /* Changed to accent color for visibility */
+  cursor: pointer;
+  display: none; /* Hidden on Desktop */
+  z-index: 1001;
+}
+
+@media (max-width: 768px) {
+  #menu-icon {
+    display: block; /* Forced visibility on Mobile */
+  }
+
+  .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 1rem 4%;
+    background: var(--bg);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    display: none; /* Keep hidden until toggled */
+    transition: 0.3s ease;
+  }
+
+  /* This class will be toggled via JavaScript */
+  .navbar.active {
+    display: block;
+  }
+
+  .navbar a {
+    display: block;
+    font-size: 2rem;
+    margin: 3rem 0;
+    text-align: center;
+  }
+}
